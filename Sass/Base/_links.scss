@@ -1,0 +1,10 @@
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+
+    &:active, &:hover, &:link, &:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+}

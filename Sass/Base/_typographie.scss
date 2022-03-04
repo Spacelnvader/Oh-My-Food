@@ -1,0 +1,21 @@
+@use "../Utils/" as a;
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 1.6em;
+    font-weight: a.$fw-bold;
+}
+
+h2 {
+    font-size: 1.4em;
+    font-weight: a.$fw-bold;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: a.$fw-bold;
+}

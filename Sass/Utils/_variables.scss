@@ -1,0 +1,41 @@
+/* Colors */
+
+$clr-primary: #9356DC;
+$clr-secondary: #FF79DA;
+$clr-tertiary: #99E2D0;
+$clr-tertiary-highlight: #008766;
+$clr-grey1: #f6f6f6;
+$clr-grey2: #eaeaea;
+$clr-grey3: #7e7e7e;
+$clr-grey4: #353535;
+
+$clr-secondary-light: #fd8ce9;
+
+/* Font weight */
+$fw-thin: 300;
+$fw-regular: 400;
+$fw-bold: 700;
+
+
+/*Font Awesome icons*/
+
+$ico-map-marker: '\f3c5';
+$ico-mobile: '\f3cd';
+$ico-list: '\f0ca';
+$ico-store: '\f54e';
+$ico-check: '\f058';
+$ico-heart: '\f004';
+$ico-handshake: '\f4c4';
+$ico-usentsils: '\f2e7';
+
+/* Box-shadow */
+
+$box-shadow:        0px 1px 1px rgba(0, 0, 0, 0.12),
+                    0px 2px 2px rgba(0, 0, 0, 0.12),
+                    0px 4px 4px rgba(0, 0, 0, 0.12);
+                    
+
+    
+$box-shadow-hover:  0px 2px 2px rgba(0, 0, 0, 0.15),
+                    0px 4px 4px rgba(0, 0, 0, 0.15),
+                    0px 8px 8px rgba(0, 0, 0, 0.15);
