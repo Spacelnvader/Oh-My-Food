@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,12 @@
     <script src="https://kit.fontawesome.com/b9d63ad7f4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <!-- Import stylesheets -->
     <link rel="stylesheet" href="Css/style.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -23,7 +26,7 @@
     </header>
     <main>
         <div class="location">
-            <div>               
+            <div>
                 <p>Paris, Belleville</p>
             </div>
         </div>
@@ -34,6 +37,106 @@
                 <div class="cta__btn">Explorer nos restaurants</div>
             </a>
         </section>
+        <section class="fonctionnement">
+            <h2>Fonctionnement</h2>
+            <div class="tile" id="choose">
+                <div class="step-tag">
+                    1
+                </div>
+                <p>Choisissez un restaurant</p>
+            </div>
+            <div class="tile" id="compose">
+                <div class="step-tag">
+                    2
+                </div>
+                <p>Composez votre menu</p>
+            </div>
+            <div class="tile" id="taste">
+                <div class="step-tag">
+                    3
+                </div>
+                <p>Dégustez au restaurant</p>
+            </div>
+        </section>
+        <section class="restaurants">
+            <h2>Restaurants</h2>
+            <article class="card" id="la_palette_du_gout">
+                <a href="pages/la_palette_du_gout.html">
+                    <div class="card__tag-new">Nouveau</div>
+                    <img class="card__picture" src="/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                </a>
+                <div class="card__details">
+                    <div class="card__details__text">
+                        <a href="pages/la_palette_du_gout.html">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </a>
+                    </div>
+                    <div class="heart-container">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="card" id="la_note_enchantee">
+                <a href="pages/la_note_enchantee.html">
+                    <div class="card__tag-new">Nouveau</div>
+                    <img class="card__picture" src="/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                </a>
+                <div class="card__details">
+                    <a href="/pages/la_note_enchantee.html">
+                        <div class="card__details__text">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+                    </a>
+                    <div class="heart-container">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="card" id="a_la_francaise">
+                <a href="pages/a_la_francaise.html">
+                    <img class="card__picture" src="/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
+                </a>
+                <div class="card__details">
+                    <a href="pages/a_la_francaise.html">
+                        <div class="card__details__text">
+                            <h3>A la française</h3>
+                            <p>Cité Rouge</p>
+                        </div>
+                    </a>
+                    <div class="heart-container">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="card" id="le_delice_des_sens">
+                <a href="pages/le_delice_des_sens.html">
+                    <img class="card__picture" src="/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                </a>
+                <div class="card__details">
+                    <a href="pages/le_delice_des_sens.html">
+                        <div class="card__details__text">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                    </a>
+                    <div class="heart-container">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </article>
+        </section>
     </main>
+    <footer>
+        <img src="assets/images/logo/ohmyfood.png" alt="logo Ohmyfood">
+        <ul>
+            <li id="suggest"><a href="#">Proposer un restaurant</a></li>
+            <li id="partnership"><a href="#">Devenir partenaire</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+        </ul>
+    </footer>
 </body>
+
 </html>
