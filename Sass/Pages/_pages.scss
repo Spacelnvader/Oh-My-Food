@@ -1,1 +1,72 @@
 @use "../Utils/" as a;
+
+#restaurant_picture {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.restaurant-page__title {
+    position: relative;
+    margin-top: -25px;
+    @include a.flex-center();
+    background-color: a.$clr-grey1;
+    padding: 1em;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    h1 {
+        width: 75%;
+        font-family: 'Shrikhand', sans-serif;
+    }
+
+    i {
+        @include a.flex-center();
+        width: 25%;
+    }
+
+}
+@media screen and (min-width: 800px) {
+
+    .restaurant__menu {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: a.$clr-grey1;
+        justify-content: space-evenly;
+    }
+    
+}
+
+
+.restaurant__section {
+    background-color: a.$clr-grey1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em 0;
+    padding: 1em;
+    @include a.animation-slideUp();
+    
+    @media screen and (min-width: 800px) {
+        width: 500px;
+    }
+
+}
+
+.section-title__container {
+    width: 100%;
+}
+
+.restaurant__section h2 {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content:"";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50%;
+        border-bottom: 3px solid a.$clr-tertiary;
+    }
+}

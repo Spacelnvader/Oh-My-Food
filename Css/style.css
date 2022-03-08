@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Colors */
 /* Font weight */
 /*Font Awesome icons*/
@@ -91,6 +92,81 @@ a {
 a:active, a:hover, a:link, a:visited {
   text-decoration: none;
   color: inherit;
+}
+
+/* Colors */
+/* Font weight */
+/*Font Awesome icons*/
+/* Box-shadow */
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  height: 4.5em;
+  background-color: white;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  opacity: 0;
+  max-width: 600px;
+}
+
+.menu-item:hover .menu-item__check {
+  margin-right: 0;
+}
+
+.menu-item:hover .fa-check-circle {
+  transform: rotate(360deg);
+  transition-delay: 2s;
+  transition: transform 0.5s ease-in;
+}
+
+.menu-item__description {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 1em;
+}
+.menu-item__description h3 {
+  margin-bottom: 0.5em;
+}
+.menu-item__description h3, .menu-item__description p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* min-width: 0; */
+}
+
+.menu-item__description__bottom_line {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.menu-item__description__bottom_line span {
+  padding: 0 1em 0 1em;
+  flex-shrink: 0;
+}
+
+.menu-item__check {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  color: white;
+  height: 100%;
+  width: 80px;
+  margin-right: -80px;
+  transition: margin 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+/* Vérifier si rotation inverse demandée */
+.fa-check-circle {
+  transform: rotate(0deg);
+  transition: transform 0.5s ease;
 }
 
 /* Colors */
@@ -567,5 +643,105 @@ footer li {
 /* Font weight */
 /*Font Awesome icons*/
 /* Box-shadow */
+#restaurant_picture {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.restaurant-page__title {
+  position: relative;
+  margin-top: -25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  padding: 1em;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.restaurant-page__title h1 {
+  width: 75%;
+  font-family: "Shrikhand", sans-serif;
+}
+.restaurant-page__title i {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+@media screen and (min-width: 800px) {
+  .restaurant__menu {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f6f6f6;
+    justify-content: space-evenly;
+  }
+}
+.restaurant__section {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  gap: 1em 0;
+  padding: 1em;
+}
+.restaurant__section .menu-item:nth-child(1n) {
+  animation: slideUp 0.75s forwards ease;
+  animation-delay: 0.25s;
+}
+.restaurant__section .menu-item:nth-child(2n) {
+  animation: slideUp 0.75s forwards ease;
+  animation-delay: 0.5s;
+}
+.restaurant__section .menu-item:nth-child(3n) {
+  animation: slideUp 0.75s forwards ease;
+  animation-delay: 0.75s;
+}
+.restaurant__section .menu-item:nth-child(4n) {
+  animation: slideUp 0.75s forwards ease;
+  animation-delay: 1s;
+}
+.restaurant__section .menu-item:nth-child(5n) {
+  animation: slideUp 0.75s forwards ease;
+  animation-delay: 1.25s;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 800px) {
+  .restaurant__section {
+    width: 500px;
+  }
+}
+
+.section-title__container {
+  width: 100%;
+}
+
+.restaurant__section h2 {
+  position: relative;
+  display: inline-block;
+}
+.restaurant__section h2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50%;
+  border-bottom: 3px solid #99E2D0;
+}
 
 /*# sourceMappingURL=style.css.map */

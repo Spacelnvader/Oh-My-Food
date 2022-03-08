@@ -19,3 +19,25 @@
         }
     }
 }
+
+@mixin animation-slideUp {
+
+    
+    @for $i from 1 through 5 {
+        & .menu-item:nth-child(#{$i}n) {
+            animation: slideUp .75s forwards ease;
+            animation-delay: #{$i * 0.25}s;
+        }
+    }
+
+    @keyframes slideUp {
+        0% {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
