@@ -19,7 +19,7 @@
         }
     }
 }
-
+// On répète l'action pour tout les enfants de la classe .menu-item, on lance l'animation 1 fois par le nombre d'élement (3, 4 ou 5 fois selon la page) avec .25s de délai entre chaque itération
 @mixin animation-slideUp {
 
     
@@ -29,7 +29,7 @@
             animation-delay: #{$i * 0.25}s;
         }
     }
-
+// chaque itération d'animation sera en bas de 50px et invisible pour remonter et devenir visible 
     @keyframes slideUp {
         0% {
             transform: translateY(50px);

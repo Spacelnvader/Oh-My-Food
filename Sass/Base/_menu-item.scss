@@ -32,6 +32,7 @@
     }
     h3, p {
         overflow: hidden;
+        // rogner le texte qui dépasse en ajoutant des pointillés (éllipse)
         text-overflow: ellipsis;
         /* min-width: 0; */
     }
@@ -54,6 +55,7 @@
     color: white;
     height: 100%;
     width: 80px;
+    // margin right négatif pour mettre l'élément check invisible, puis le faire surgir en .5s au clic
     margin-right: -80px;
     transition: margin .5s ease-in-out;
     cursor: pointer;
