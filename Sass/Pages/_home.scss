@@ -18,6 +18,12 @@
         right: 1em;
     }
 }
+// Cacher la localisation sur ordinateur
+@media screen and (min-width: 800px) {
+    .location {
+        display: none;
+    }
+}
 
 .cta {
     @include a.flex-center($direction: column);
@@ -66,7 +72,7 @@
 }
 
 @media screen and (min-width: 800px) {
-    .restaurants h2, #how_to h2 {
+    .restaurants h2, .fonctionnement h2 {
         text-align: center;
     }
 }
